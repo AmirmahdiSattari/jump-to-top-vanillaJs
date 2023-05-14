@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    height: 100vh;
+
+}
+section{
+    height:100vh;
+    display: flex;
+    align-items:center;
+    justify-content : center;
+    color: #fff;
+    font-size: 2rem;
+}
+#sectionOne{
+    background-color: red;
+}
+#sectionTwo{
+    background-color: rgb(3, 74, 28);
+}
+#sectionThree{
+    background-color: rgb(18, 0, 91);
+}
+#sectionFour{
+    background-color: rgb(218, 102, 13);
+}
+.to-top{
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    color: #000;
+    background-color: #fff;
+    font-size: 2rem;
+    opacity: 0;
+    transition:all .3s ease;
+}
+.to-top.active{
+    opacity: 1;
+    bottom: 40px;
+}
+.to-top .arrow-up-key{
+    font-size: 2rem;
+}
